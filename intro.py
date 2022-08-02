@@ -1,12 +1,6 @@
 # ------------------------------------------------ASCII
 # NABIL BOUGHDAD, I HATE MY JOB
 
-
-from sqlite3 import ProgrammingError
-
-from more_itertools import last
-
-
 print("""
 N     N      A      B B B B  I I I I I  L
 N N   N    A   A    B      B     I      L
