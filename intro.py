@@ -160,3 +160,14 @@ def lots_of_math(a, b, c, d):
     print(c-d)
     print((a+b)*(c-d))
     return ((a+b)*(c-d)) % a
+
+
+love_maybe_lines = ['Always    ', '     in the middle of our bloodiest battles  ',
+                    'you lay down your arms', '           like flowering mines    ', '\n', '   to conquer me home.    ']
+
+love_maybe_lines_stripped = []
+for item in love_maybe_lines:
+    love_maybe_lines_stripped.append(item.strip())
+# print(love_maybe_lines_stripped)
+love_maybe_full = '\n'.join(love_maybe_lines_stripped)
+print(love_maybe_full)
