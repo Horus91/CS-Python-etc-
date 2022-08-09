@@ -171,3 +171,7 @@ for item in love_maybe_lines:
 # print(love_maybe_lines_stripped)
 love_maybe_full = '\n'.join(love_maybe_lines_stripped)
 print(love_maybe_full)
+
+# ------------------------------------------------MODULES
+# modules are a collection of reusable code can be called above your program to make use of it, they re often refered to as "Packages" or "libraries"
+# example of a library or a module is datetime we use "from datetime import datetime" in order to invoke the module datetime
