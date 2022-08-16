@@ -1,6 +1,7 @@
 # ------------------------------------------------ASCII
 # NABIL BOUGHDAD, I HATE MY JOB
 
+
 print("""
 N     N      A      B B B B  I I I I I  L
 N N   N    A   A    B      B     I      L
@@ -175,3 +176,43 @@ print(love_maybe_full)
 # ------------------------------------------------MODULES
 # modules are a collection of reusable code can be called above your program to make use of it, they re often refered to as "Packages" or "libraries"
 # example of a library or a module is datetime we use "from datetime import datetime" in order to invoke the module datetime
+# there is also the module "random"
+# check the documentation for more modules
+# ---------(NAMESPACE)-------------------------------------
+# the namespace is the distinction between your main.py and the code you want to run abroad your file example: "import random" random is a namespace
+# sometimes the namespace can be long or very ambiguous we can use the acronym 'as' example "import datetime as dt" see now the namespace becomes "dt" only
+# we might also import a module as a wildcard and every function or variable in it can be called within the code with just the name you don't have to state the
+# module each time you want to use it example "from datetime import *" some applications of modules and namespace
+# from matplotlib import pyplot as plt
+# import random
+# # Add your code below:
+# numbers_a = range(1,13)
+# numbers_b = random.sample(range(1000),12)
+# plt.plot(numbers_a,numbers_b)
+# plt.show()
+# ------------------------------------------------PIPENV
+# it is used to work on a specific version of python or a specific version of a library in python it is set up on my computer however specifying
+# the version require some bash commands inside the concerned project example 'pipenv --three' means this project will run python3 to install
+# a py library we use the command "pip install numpy" if you want to install a specific version use the same command but likewise "pipenv install numpy==1.15.4"
+# to access the project that has the specified versions we use "pipenv shell"
+# ------------------------------------------------DICTIONARIES
+# a dictionary is an unordered type of data which has keys with a corresponding values "KEY":"VALUE"
+# car={"make":"Mercedes","model":"C-Class","year":2022} this is an example of a dictionary
+# we can't have a list a keys however we can have values as lists. the reason is the keys must be static unchangeable to add a value to the dictionnary
+# we use example : car["fuel"]="diesel" this should add the "fuel":"diesel" to the car dictionary this way is used to overwrite a value also
+# if we want to use multiple Key:value to a dictionary we use car.update({key: value, key: value, key: value})
+# we can create a dictionary by combining two lists likewise :
+# names = ['Jenny', 'Alexus', 'Sam', 'Grace']
+# heights = [61, 70, 67, 64]
+# students = {key: value for key, value in zip(names, heights)}
+# or we can do it likewise
+# students = dict(zip(names, heights))
+# print(students)
+# we can use try/except if the key doesn't exist in the dictionary in order to avoid a KeyError
+# the dictionary has a method to get the value of key safe if it doesn't exist it will throw a None value instead of an Error you can even
+# state the value if the key doesn't exist by adding it as a second argument example dictionary.get("key",0) now to remove a key we use
+# and return a value if the key isn't found .pop("key","value") the function list(dictionary) will list all the keys of a dictionary
+# and the method dictionary.keys() will also list the keys of the dictionary but it can't be modified if you did attribute it to a variable
+# you can get the(key, value) set with the method .items() you can iterate through and dictionary  like wise
+# for key,value in dict.items():
+# Do something with key and value
