@@ -216,3 +216,28 @@ print(love_maybe_full)
 # you can get the(key, value) set with the method .items() you can iterate through and dictionary  like wise
 # for key,value in dict.items():
 # Do something with key and value
+# ------------------------------------------------  CLASSES AND OBJECTS
+# object oriented programming is a way of programming it gives the programmer the freedom to model new data types example: a car
+# it can have(model, year, type etc we call these "attributes" the modeled data type has functionalities fly(), swim() etc... we call them "methods")
+# classes have always the first letter capitalized; attributes can either be strings, ints,floats,booleans even objects
+# example of a class
+# class Dog:
+#       # To create a Dog, give it a name, breed, and age. age is in years.
+#   # If you don't give an age, we'll say it's 0 years old (a puppy).
+#   # All dogs also start as friendly!
+# __init__ is a constructor function
+#   def __init__(self, input_name, input_breed, input_age = 0, input_friendliness = True):
+#     # self.name is this specific dog's name
+#     self.name = input_name
+#     self.breed = input_breed
+#     self.age = input_age
+#     self.is_friendly = input_friendliness
+
+# Create a __repr__ method it is a method that returns a full description of a Class items
+# def __repr__(self):
+#   description = f"{self.name} is a {self.breed}, he/she is {self.age}, "
+#    if self.is_cuddly == True:
+#         description += f"{self.name} is a cuddly cat"
+#     else:
+#         description += f"what a bad cat!"
+#     return description
